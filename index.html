@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <!-- アニメーションする背景 -->
+     <div class="background-animation"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#skills">プログラミングスキル</a></li>
+                <li><a href="#qualifications">資格</a></li>
+                <li><a href="#projects">成果物・プロジェクト</a></li>
+                <li><a href="#contact">クレジット</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1 id="typing"></h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- 自己紹介 -->
+        <section id="about">
+            <h2>自己紹介</h2>
+            <p>長崎大学大学院総合生産科学研究科博士前期課程1年の原田知季と申します。
+                私はバイオインフォマティクスを専門に、がんに関するデータ解析・研究に取り組んできました。
+                この経験を通じて、データから本質を捉え、課題解決に導く力を培っています。
+                将来はシステムエンジニアやデータサイエンティストとして、社会に価値を生み出すことを目標としています。
+                新しい技術を学び、実践することが好きで、大学生活ではRやPythonなどを中心に幅広いスキルを身につけました。
+                常に成長を求め、自ら手を動かして挑戦を重ねる姿勢を大切にしています。
+                今後も柔軟な発想と確かな技術力を強みに、より大きな課題にも果敢に挑戦していきたいと考えています。
+            </p>
+            <h3>経歴</h3>
+            <ul>
+                <li>佐賀清和高校：2017年4月～2020年3月</li>
+                <li>長崎大学情報データ科学部情報データ科学科データサイエンスコース：2021年4月～2025年3月卒業</li>
+                <li>長崎大学大学院総合生産科学研究科博士前期課程総合生産科学専攻共生システム科学コース（情報）：2025年4月～2027年3月卒業見込み</li>
+            </ul>
+        </section>
+
+        <!-- スキルセット -->
+        <section id="skills">
+            <h2>スキルセット</h2>
+            <div class="card" data-tooltip="経験: 3年 | 習熟度: ★★★☆☆">R</div>
+            <div class="card" data-tooltip="経験: 4年 | 習熟度: ★★★☆☆">Python</div>
+            <div class="card" data-tooltip="経験: 3年 | 習熟度: ★★☆☆☆">HTML/CSS</div>
+            <div class="card" data-tooltip="経験: 2年 | 習熟度: ★★☆☆☆">JavaScript</div>
+            <div class="card" data-tooltip="経験: 0.2年 | 習熟度: ★☆☆☆☆">React</div>
+            <div class="card" data-tooltip="経験: 0.3年 | 習熟度: ★☆☆☆☆">TypeScript</div>
+            <div class="card" data-tooltip="経験: 0.3年 | 習熟度: ★☆☆☆☆">C# & Unity</div>
+            <div class="card" data-tooltip="経験: 0.3年 | 習熟度: ★☆☆☆☆">PostgreSQL</div>
+        </section>
+
+        <!-- 資格 -->
+        <section id="qualifications">
+            <h2>取得資格一覧</h2>
+            <ul>
+                <li>基本情報技術者試験</li>
+                <li>統計検定2級</li>
+                <li>Paiza Sランク</li>
+                <li>AtCoder 茶</li>
+                <li>TOEIC 595点</li>
+                <li>データサイエンス応用基礎教育プログラム　修了</li>
+            </ul>
+            <h3>勉強中の内容</h3>
+        <ul>
+            <li>TOEIC（2025年5月18日受検、目標：650点）</li>
+            <li>統計検定準1級</li>
+            <li>競技プログラミング（目標：AtCoder 緑）</li>
+            <li>バイオインフォマティクス技術者認定試験（2025年7月受検予定）</li>
+        </ul>
+        </section>
+
+        <!-- プロジェクト -->
+        <section id="projects">
+            <h2>成果物・プロジェクト</h2>
+            <a href="./camera.html" class="card">感情認識アプリ（プロトタイプ）</a>
+            <a href="./unity-game.html" class="card">Unity ゲーム</a>
+            <a href="./single-cell.html" class="card">研究内容（途中経過）</a>
+            <a href="./javascript-game.html" class="card">JavaScript ゲーム</a>
+            <a href="./python-game.html" class="card">Python ゲーム（説明のみ）</a>
+        </section>
+
+        <!-- クレジット -->
+        <section id="contact">
+            <h2>クレジット</h2>
+            <p>背景の画像：<a href="https://aipict.com/nature/sky/daytime_sky/" target="_blank" rel="noopener noreferrer">AIPICT</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

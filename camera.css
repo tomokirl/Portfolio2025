@@ -1,0 +1,106 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* 横スクロールだけ抑制 */
+    overflow-y: auto;   /* 縦スクロールは許可 */
+    position: relative;
+    background-color: #87CEEB; /* 空色 */
+  }
+  
+  .background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .sky {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    animation: moveSky 30s linear infinite;
+  }
+  
+  @keyframes moveSky {
+    from {
+      transform: translateX(0) translateY(0);
+    }
+    to {
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1em;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .screenshot img {
+    width: 80%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* フッター部分 */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #ccc;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .return-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .return-button:hover {
+    background-color: #0056b3;
+  }
+  
